@@ -1,2 +1,2 @@
-*/1 * * * * /bin/bash -c 'output=$(/bin/bash /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/automation.sh 2>&1); echo "$(date) - Script executed - $output"' >> /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/testfile.txt
-*/3 * * * * /bin/bash -c 'output=$(/bin/bash /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/archive.sh 2>&1); echo "$(date) - Script executed - $output"' >> /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/testfile.txt
+*/2 * * * * /bin/bash -c 'output=$(/bin/bash /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/automation.sh 2>&1); echo "$(date) - Script executed - $output"' >> /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/testfile.txt
+*/* 2 * * * /bin/bash -c 'output=$(/bin/bash /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/archive.sh 2>&1); echo "$(date) - Script executed - $output"' >> /home/Hudson-ubuntu/Desktop/Praktikum_1/ignatius/testfile.txt
