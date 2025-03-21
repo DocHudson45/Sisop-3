@@ -24,8 +24,8 @@ if echo "$last_action" | grep -q "logged out"; then
 fi
 
 # Define paths
-download_dir="cloud_storage/downloads/$USERNAME"
-archive_dir="cloud_storage/archives/$USERNAME"
+download_dir="cloud_storage/downloads/$username"
+archive_dir="cloud_storage/archives/$username"
 
 # Ensure the archive directory exists
 mkdir -p "$archive_dir"
