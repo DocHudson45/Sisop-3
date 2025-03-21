@@ -61,6 +61,14 @@ done
 log_activity "REGISTER: INFO User registered successfully"
 echo "$name;$password" >> "$Users_File"
 
+Username=$(grep 'LOGIN: INFO User' "$log_file" | tail -n 1 | awk '{print $6}')
+
+download_dir="cloud_storage/downloads/$Username"
+archive_dir="cloud_storage/archives/$Username"
+
+mkdir -p "$download_dir"
+mkdir -p "$archive_dir"
+
 echo "Your sign up was successful"
 echo "Username : $name"
 echo "Password : $password"
