@@ -1,4 +1,3 @@
-
 echo "*******************************************************************"
 echo "Welcome to Sign Up page."
 echo "Fill your username and password"
@@ -11,13 +10,13 @@ echo
 echo "Please enter your username"
 read name
 # buka file .log, kalau ada, kasih warning
-if grep -q "^$name$" users.txt; then
+if grep -q "^$name;" users.txt; then
         echo "Username sudah terdaftar! Silakan gunakan nama lain."
-        break                                                                                                                                                                                                                   
+        continue  # Minta input ulang
     fi
 
 
-echo "Please enter your password"    
+echo "Please enter your password"
 read -s password 
 
 while true; do
