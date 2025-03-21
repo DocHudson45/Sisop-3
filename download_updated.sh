@@ -28,7 +28,6 @@ CURRENT_DAY=$(date +"%d")
 CURRENT_MONTH=$(date +"%m")
 CURRENT_YEAR=$(date +"%Y")
 
-
 log_file="cloud_storage/cloud_log.txt"
 Username=$(grep 'LOGIN: INFO User' "$log_file" | tail -n 1 | awk '{print $6}')
 download_dir="cloud_storage/downloads/$Username"
